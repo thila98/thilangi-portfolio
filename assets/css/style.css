@@ -201,7 +201,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 7rem 4rem 4rem;
+  padding: 5rem 4rem 3rem;
   background: linear-gradient(135deg,
     rgba(245,210,210,0.4) 0%,
     rgba(248,247,186,0.4) 30%,
@@ -318,7 +318,7 @@ body {
 .hero-desc {
   font-size: 0.95rem;
   color: var(--text-light);
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   max-width: 480px;
   line-height: 1.7;
 }
@@ -527,7 +527,7 @@ body {
 }
 
 section {
-  padding: 5rem 4rem;
+  padding: 3.5rem 4rem;
 }
 
 .section-title {
@@ -551,7 +551,7 @@ section {
 
 .section-subtitle {
   color: var(--text-light);
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   margin-top: 1.2rem;
   font-size: 0.95rem;
 }
@@ -576,8 +576,8 @@ section {
 .about-content {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 3rem;
-  margin-top: 2rem;
+  gap: 2rem;
+  margin-top: 1.2rem;
   align-items: start;
 }
 
@@ -701,7 +701,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
 }
 
 .project-card {
@@ -875,7 +875,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
 }
 
 .skill-category {
@@ -975,7 +975,7 @@ section {
 
 .timeline {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
   padding-left: 1.5rem;
 }
 
@@ -992,7 +992,7 @@ section {
 
 .timeline-item {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   padding-left: 2rem;
 }
 
@@ -1088,7 +1088,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
 }
 
 .cert-card {
