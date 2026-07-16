@@ -24,11 +24,11 @@
 }
 
 [data-theme="dark"] {
-  --text: #e2e8f0;
-  --text-light: #a0aec0;
-  --bg: #0f1117;
-  --card-bg: rgba(255,255,255,0.05);
-  --border: rgba(163,204,218,0.15);
+  --text: #edf2f7;
+  --text-light: #b0bec5;
+  --bg: #1a1d27;
+  --card-bg: rgba(255,255,255,0.08);
+  --border: rgba(163,204,218,0.2);
 }
 
 html {
@@ -64,7 +64,7 @@ body {
 }
 
 [data-theme="dark"] .navbar {
-  background: rgba(15,17,23,0.9);
+  background: rgba(26,29,39,0.92);
 }
 
 .nav-logo {
@@ -466,7 +466,7 @@ body {
 }
 
 [data-theme="dark"] .floating-card {
-  background: rgba(15,17,23,0.9);
+  background: rgba(26,29,39,0.92);
 }
 
 .floating-card span {
@@ -802,9 +802,9 @@ section {
 }
 
 [data-theme="dark"] .project-tags span {
-  background: rgba(61,61,28,0.5);
-  color: #c8c850;
-  border-color: rgba(61,61,28,0.8);
+  background: rgba(80,80,40,0.6);
+  color: #e8e870;
+  border-color: rgba(100,100,50,0.8);
 }
 
 .project-what {
@@ -946,9 +946,9 @@ section {
 }
 
 .skill-category.pink .skill-tags span {
-  background: rgba(245,210,210,0.4);
-  color: #8b4040;
-  border: 1px solid rgba(245,210,210,0.7);
+  background: rgba(245,210,210,0.2);
+  color: #e8a0a0;
+  border: 1px solid rgba(245,210,210,0.3);
 }
 
 .skill-category.mint .skill-tags span {
@@ -1188,7 +1188,7 @@ section {
 }
 
 [data-theme="dark"] .demo-box textarea {
-  background: rgba(15,17,23,0.8);
+  background: rgba(30,34,48,0.9);
 }
 
 .demo-box textarea:focus {
@@ -1603,4 +1603,69 @@ footer {
   .card-1, .card-2 {
     display: flex;
   }
+}
+
+/* ================================
+   Dark mode skill tag overrides
+   ================================ */
+
+[data-theme="dark"] .skill-category.pink .skill-tags span {
+  background: rgba(245,210,210,0.15);
+  color: #f0b0b0;
+  border-color: rgba(245,210,210,0.25);
+}
+
+[data-theme="dark"] .skill-category.mint .skill-tags span {
+  background: rgba(189,227,195,0.15);
+  color: #90d0a0;
+  border-color: rgba(189,227,195,0.25);
+}
+
+[data-theme="dark"] .skill-category.blue .skill-tags span {
+  background: rgba(163,204,218,0.15);
+  color: #90c8e0;
+  border-color: rgba(163,204,218,0.25);
+}
+
+[data-theme="dark"] .skill-category.yellow .skill-tags span {
+  background: rgba(248,247,186,0.12);
+  color: #d8d870;
+  border-color: rgba(248,247,186,0.2);
+}
+
+[data-theme="dark"] .cert-card {
+  background: rgba(255,255,255,0.07);
+}
+
+[data-theme="dark"] .timeline-content {
+  background: rgba(255,255,255,0.07);
+}
+
+[data-theme="dark"] .highlight {
+  background: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .tech-stack-card {
+  background: rgba(255,255,255,0.07);
+}
+
+[data-theme="dark"] .project-card {
+  background: rgba(255,255,255,0.07);
+}
+
+[data-theme="dark"] .demo-box {
+  background: rgba(255,255,255,0.07);
+}
+
+[data-theme="dark"] .contact-card {
+  background: rgba(255,255,255,0.07);
+}
+
+[data-theme="dark"] .floating-card {
+  background: rgba(26,29,39,0.95);
+  border-color: rgba(163,204,218,0.25);
+}
+
+[data-theme="dark"] .chat-box {
+  background: rgba(26,29,39,0.98);
 }
