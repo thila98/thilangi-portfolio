@@ -210,18 +210,14 @@ Rules:
 - No introduction text`;
 
   try {
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
+    const response = await fetch("https://qa-portfolio-api.thilangiuththara.workers.dev/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: "claude-sonnet-4-6",
-        max_tokens: 1000,
-        messages: [{ role: "user", content: prompt }]
-      })
+      body: JSON.stringify({ feature: input })
     });
 
     const data = await response.json();
-    const text = data.content[0].text;
+    const text = data.result;
     loading.style.display = "none";
     btn.disabled = false;
     btn.textContent = "Generate Test Cases with AI";
@@ -298,19 +294,14 @@ async function sendChat() {
   messages.scrollTop = messages.scrollHeight;
 
   try {
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
+    const response = await fetch("https://qa-portfolio-api.thilangiuththara.workers.dev/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: "claude-sonnet-4-6",
-        max_tokens: 300,
-        system: THILANGI_CONTEXT,
-        messages: chatHistory
-      })
+      body: JSON.stringify({ messages: chatHistory })
     });
 
     const data = await response.json();
-    const reply = data.content[0].text;
+    const reply = data.result;
 
     chatHistory.push({ role: "assistant", content: reply });
 
