@@ -16,11 +16,11 @@
   --dark-blue: #6a9ab0;
   --dark-mint: #7ab88a;
   --dark-pink: #c47a7a;
-  --text: #2d3748;
-  --text-light: #718096;
-  --bg: #fefefe;
-  --card-bg: rgba(255,255,255,0.8);
-  --border: rgba(163,204,218,0.25);
+  --text: #1a202c;
+  --text-light: #4a5568;
+  --bg: #f7f8fa;
+  --card-bg: rgba(255,255,255,0.95);
+  --border: rgba(163,204,218,0.4);
 }
 
 [data-theme="dark"] {
