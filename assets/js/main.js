@@ -89,43 +89,59 @@ hamburger.addEventListener("click", () => {
   const isDark = document.documentElement.getAttribute("data-theme") === "dark";
   mobileMenu.style.display = "flex";
 
+  // Background — pastel gradient in light, soft dark in dark mode
   if (isDark) {
-    mobileMenu.style.background = "rgba(15,17,23,0.98)";
-    mobileMenu.style.backdropFilter = "blur(20px)";
+    mobileMenu.style.background = "linear-gradient(160deg, #1a1d27 0%, #1e2535 100%)";
   } else {
-    mobileMenu.style.background = "rgba(255,255,255,0.98)";
-    mobileMenu.style.backdropFilter = "blur(20px)";
+    mobileMenu.style.background = "linear-gradient(160deg, #fdf6f0 0%, #f0f8f5 50%, #eef6fb 100%)";
   }
+  mobileMenu.style.backdropFilter = "blur(20px)";
 
+  // Logo
   const logo = document.getElementById("mobileMenuLogo");
   if (logo) logo.style.color = isDark ? "#edf2f7" : "#1a202c";
 
+  // Close button
   const closeBtn = mobileMenu.querySelector("button");
   if (closeBtn) {
-    closeBtn.style.background = isDark ? "rgba(163,204,218,0.15)" : "rgba(163,204,218,0.15)";
+    closeBtn.style.background = "rgba(163,204,218,0.15)";
     closeBtn.style.color = isDark ? "#edf2f7" : "#1a202c";
+    closeBtn.style.border = "1px solid rgba(163,204,218,0.3)";
   }
 
+  // Nav links — clean cards style
   const links = mobileMenu.querySelectorAll(".mmlink");
-  links.forEach((l, i) => {
+  links.forEach((l) => {
     l.style.display = "block";
-    l.style.padding = "1rem 1.5rem";
-    l.style.fontSize = "0.98rem";
+    l.style.padding = "0.9rem 1.5rem";
+    l.style.fontSize = "0.95rem";
     l.style.fontWeight = "500";
     l.style.textDecoration = "none";
     l.style.fontFamily = "Poppins, sans-serif";
     l.style.transition = "all 0.2s";
-    l.style.borderBottom = "1px solid " + (isDark ? "rgba(255,255,255,0.06)" : "rgba(163,204,218,0.15)");
-    l.style.color = isDark ? "#edf2f7" : "#2d3748";
-    l.style.background = isDark ? "rgba(255,255,255,0.04)" : "rgba(163,204,218,0.04)";
+    l.style.borderBottom = "1px solid " + (isDark ? "rgba(163,204,218,0.08)" : "rgba(163,204,218,0.2)");
+    l.style.color = isDark ? "#cbd5e0" : "#2d3748";
+    l.style.background = "transparent";
   });
 
+  // Social links
   const socialLinks = mobileMenu.querySelectorAll("div a");
   socialLinks.forEach(l => {
-    l.style.background = isDark ? "rgba(163,204,218,0.1)" : "rgba(163,204,218,0.12)";
+    l.style.background = isDark ? "rgba(163,204,218,0.1)" : "rgba(163,204,218,0.15)";
     l.style.color = "#6a9ab0";
     l.style.border = "1px solid rgba(163,204,218,0.3)";
   });
+
+  // Nav container styling
+  const nav = mobileMenu.querySelector("nav");
+  if (nav) {
+    nav.style.background = isDark ? "rgba(255,255,255,0.05)" : "rgba(255,255,255,0.7)";
+    nav.style.borderRadius = "16px";
+    nav.style.overflow = "hidden";
+    nav.style.border = "1px solid " + (isDark ? "rgba(163,204,218,0.1)" : "rgba(163,204,218,0.25)");
+    nav.style.backdropFilter = "blur(10px)";
+    nav.style.boxShadow = isDark ? "none" : "0 4px 20px rgba(163,204,218,0.15)";
+  }
 });
 
 function closeMobile() {
