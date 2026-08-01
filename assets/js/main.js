@@ -222,6 +222,7 @@ Rules:
     btn.disabled = false;
     btn.textContent = "Generate Test Cases with AI";
     output.textContent = text;
+    document.getElementById("demoActions").style.display = "flex";
 
   } catch (err) {
     loading.style.display = "none";
@@ -311,4 +312,19 @@ async function sendChat() {
   } catch (err) {
     typing.textContent = "Sorry, something went wrong. Please try again.";
   }
+}
+
+function copyOutput() {
+  const output = document.getElementById('demoOutput').textContent;
+  navigator.clipboard.writeText(output).then(() => {
+    const btn = document.querySelector('.btn-action');
+    btn.textContent = '✅ Copied!';
+    setTimeout(() => { btn.textContent = '📋 Copy Test Cases'; }, 2000);
+  });
+}
+
+function clearDemo() {
+  document.getElementById('demoOutput').textContent = '';
+  document.getElementById('featureInput').value = '';
+  document.getElementById('demoActions').style.display = 'none';
 }
