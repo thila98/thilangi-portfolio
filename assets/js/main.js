@@ -116,8 +116,7 @@ hamburger.addEventListener("click", () => {
     l.style.fontFamily = "Poppins, sans-serif";
     l.style.transition = "all 0.2s";
     l.style.borderBottom = "1px solid " + (isDark ? "rgba(255,255,255,0.06)" : "rgba(163,204,218,0.15)");
-      l.style.color = isDark ? "#edf2f7" : "#2d3748";
-    }
+    l.style.color = isDark ? "#edf2f7" : "#2d3748";
     l.style.background = isDark ? "rgba(255,255,255,0.04)" : "rgba(163,204,218,0.04)";
   });
 
