@@ -2250,3 +2250,53 @@ section {
   .btn-action {
   }
 }
+
+/* ================================
+   Mobile menu redesign
+   ================================ */
+
+.mobile-menu {
+}
+
+[data-theme="dark"] .mobile-menu {
+}
+
+.mobile-menu.open {
+}
+
+.mobile-menu ul {
+}
+
+.mobile-menu ul li {
+}
+
+.mobile-menu ul li:first-child {
+}
+
+.mobile-menu ul li a {
+}
+
+.mobile-menu ul li a:hover,
+.mobile-menu ul li a:active {
+}
+
+.mobile-menu-close {
+}
+
+.mobile-menu-close:hover {
+}
+
+.mobile-menu-logo {
+}
+
+.mobile-menu-logo span {
+}
+
+.mobile-menu-social {
+}
+
+.mobile-menu-social a {
+}
+
+.mobile-menu-social a:hover {
+}
