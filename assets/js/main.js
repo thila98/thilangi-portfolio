@@ -88,14 +88,45 @@ const mobileMenu = document.getElementById("mobileMenu");
 hamburger.addEventListener("click", () => {
   const isDark = document.documentElement.getAttribute("data-theme") === "dark";
   mobileMenu.style.display = "flex";
-  mobileMenu.style.background = isDark ? "rgba(20,22,30,0.97)" : "rgba(255,255,255,0.97)";
-  const links = mobileMenu.querySelectorAll("a:not([target])");
-  const color = isDark ? "#e2e8f0" : "#2d3748";
-  links.forEach(l => l.style.color = color);
+
+  if (isDark) {
+    mobileMenu.style.background = "rgba(15,17,23,0.98)";
+    mobileMenu.style.backdropFilter = "blur(20px)";
+  } else {
+    mobileMenu.style.background = "rgba(255,255,255,0.98)";
+    mobileMenu.style.backdropFilter = "blur(20px)";
+  }
+
   const logo = document.getElementById("mobileMenuLogo");
-  if(logo) logo.style.color = isDark ? "#e2e8f0" : "#2d3748";
+  if (logo) logo.style.color = isDark ? "#edf2f7" : "#1a202c";
+
   const closeBtn = mobileMenu.querySelector("button");
-  if(closeBtn) closeBtn.style.color = isDark ? "#e2e8f0" : "#2d3748";
+  if (closeBtn) {
+    closeBtn.style.background = isDark ? "rgba(163,204,218,0.15)" : "rgba(163,204,218,0.15)";
+    closeBtn.style.color = isDark ? "#edf2f7" : "#1a202c";
+  }
+
+  const links = mobileMenu.querySelectorAll(".mmlink");
+  links.forEach((l, i) => {
+    l.style.display = "block";
+    l.style.padding = "1rem 1.5rem";
+    l.style.fontSize = "0.98rem";
+    l.style.fontWeight = "500";
+    l.style.textDecoration = "none";
+    l.style.fontFamily = "Poppins, sans-serif";
+    l.style.transition = "all 0.2s";
+    l.style.borderBottom = "1px solid " + (isDark ? "rgba(255,255,255,0.06)" : "rgba(163,204,218,0.15)");
+      l.style.color = isDark ? "#edf2f7" : "#2d3748";
+    }
+    l.style.background = isDark ? "rgba(255,255,255,0.04)" : "rgba(163,204,218,0.04)";
+  });
+
+  const socialLinks = mobileMenu.querySelectorAll("div a");
+  socialLinks.forEach(l => {
+    l.style.background = isDark ? "rgba(163,204,218,0.1)" : "rgba(163,204,218,0.12)";
+    l.style.color = "#6a9ab0";
+    l.style.border = "1px solid rgba(163,204,218,0.3)";
+  });
 });
 
 function closeMobile() {
