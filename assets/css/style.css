@@ -2206,3 +2206,47 @@ section {
     width: 260px;
   }
 }
+
+@media (max-width: 768px) {
+
+  /* Hide hero visual on mobile - reduces scrolling */
+  .hero-visual {
+  }
+
+  /* About links - 2x2 grid */
+  .about-links {
+  }
+
+  .about-link {
+  }
+
+  /* Skills tags - wrap properly */
+  .skill-tags {
+  }
+
+  .skill-tags span {
+  }
+
+  /* Experience - smaller font */
+  .timeline-content p {
+  }
+
+  /* Certifications - 2 columns */
+  .cert-grid {
+  }
+
+  /* Contact - 2 columns */
+  .contact-links {
+  }
+
+  /* Fix blank space at bottom */
+  body {
+  }
+
+  footer {
+  }
+
+  /* Fix copy/clear buttons on mobile */
+  .btn-action {
+  }
+}
