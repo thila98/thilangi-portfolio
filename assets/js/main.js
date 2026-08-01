@@ -91,7 +91,7 @@ hamburger.addEventListener("click", () => {
 
   // Background — pastel gradient in light, soft dark in dark mode
   if (isDark) {
-    mobileMenu.style.background = "linear-gradient(160deg, #1a1d27 0%, #1e2535 100%)";
+    mobileMenu.style.background = "linear-gradient(160deg, #1a2535 0%, #1a2530 50%, #1e2a28 100%)";
   } else {
     mobileMenu.style.background = "linear-gradient(160deg, #fdf6f0 0%, #f0f8f5 50%, #eef6fb 100%)";
   }
@@ -120,7 +120,7 @@ hamburger.addEventListener("click", () => {
     l.style.fontFamily = "Poppins, sans-serif";
     l.style.transition = "all 0.2s";
     l.style.borderBottom = "1px solid " + (isDark ? "rgba(163,204,218,0.08)" : "rgba(163,204,218,0.2)");
-    l.style.color = isDark ? "#cbd5e0" : "#2d3748";
+    l.style.color = isDark ? "#e2e8f0" : "#1a202c";
     l.style.background = "transparent";
   });
 
