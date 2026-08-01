@@ -86,11 +86,20 @@ const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
 
 hamburger.addEventListener("click", () => {
-  mobileMenu.classList.toggle("open");
+  const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  mobileMenu.style.display = "flex";
+  mobileMenu.style.background = isDark ? "rgba(20,22,30,0.97)" : "rgba(255,255,255,0.97)";
+  const links = mobileMenu.querySelectorAll("a:not([target])");
+  const color = isDark ? "#e2e8f0" : "#2d3748";
+  links.forEach(l => l.style.color = color);
+  const logo = document.getElementById("mobileMenuLogo");
+  if(logo) logo.style.color = isDark ? "#e2e8f0" : "#2d3748";
+  const closeBtn = mobileMenu.querySelector("button");
+  if(closeBtn) closeBtn.style.color = isDark ? "#e2e8f0" : "#2d3748";
 });
 
 function closeMobile() {
-  mobileMenu.classList.remove("open");
+  mobileMenu.style.display = "none";
 }
 
 // ================================

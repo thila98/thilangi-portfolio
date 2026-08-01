@@ -33,22 +33,24 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <button class="mobile-menu-close" onclick="closeMobile()">✕</button>
-        <div class="mobile-menu-logo">Thilangi<span>.</span></div>
-        <ul>
-            <li><a href="#about" onclick="closeMobile()">About</a></li>
-            <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
-            <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
-            <li><a href="#experience" onclick="closeMobile()">Experience</a></li>
-            <li><a href="#certifications" onclick="closeMobile()">Certifications</a></li>
-            <li><a href="#demo" onclick="closeMobile()">Live Demo</a></li>
-            <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
-        </ul>
-        <div class="mobile-menu-social">
-            <a href="https://github.com/thila98" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/thilangi-de-silva-66bb0b190/" target="_blank">LinkedIn</a>
+    <div id="mobileMenu" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:9999;flex-direction:column;align-items:center;justify-content:center;backdrop-filter:blur(20px);">
+        <div id="mobileMenuInner" style="width:100%;max-width:400px;text-align:center;">
+            <p id="mobileMenuLogo" style="font-size:1.4rem;font-weight:700;margin-bottom:1.5rem;">Thilangi<span style="color:#6a9ab0;">.</span></p>
+            <nav>
+                <a href="#about" onclick="closeMobile()" style="display:block;padding:0.9rem;font-size:1rem;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(163,204,218,0.2);">About</a>
+                <a href="#projects" onclick="closeMobile()" style="display:block;padding:0.9rem;font-size:1rem;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(163,204,218,0.2);">Projects</a>
+                <a href="#skills" onclick="closeMobile()" style="display:block;padding:0.9rem;font-size:1rem;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(163,204,218,0.2);">Skills</a>
+                <a href="#experience" onclick="closeMobile()" style="display:block;padding:0.9rem;font-size:1rem;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(163,204,218,0.2);">Experience</a>
+                <a href="#certifications" onclick="closeMobile()" style="display:block;padding:0.9rem;font-size:1rem;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(163,204,218,0.2);">Certifications</a>
+                <a href="#demo" onclick="closeMobile()" style="display:block;padding:0.9rem;font-size:1rem;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(163,204,218,0.2);">Live Demo</a>
+                <a href="#contact" onclick="closeMobile()" style="display:block;padding:0.9rem;font-size:1rem;font-weight:500;text-decoration:none;">Contact</a>
+            </nav>
+            <div style="display:flex;gap:0.8rem;justify-content:center;margin-top:1.5rem;">
+                <a href="https://github.com/thila98" target="_blank" style="font-size:0.78rem;padding:0.35rem 0.9rem;border:1px solid rgba(163,204,218,0.4);border-radius:20px;text-decoration:none;color:#6a9ab0;">GitHub</a>
+                <a href="https://www.linkedin.com/in/thilangi-de-silva-66bb0b190/" target="_blank" style="font-size:0.78rem;padding:0.35rem 0.9rem;border:1px solid rgba(163,204,218,0.4);border-radius:20px;text-decoration:none;color:#6a9ab0;">LinkedIn</a>
+            </div>
         </div>
+        <button onclick="closeMobile()" style="position:absolute;top:1rem;right:1rem;width:40px;height:40px;border-radius:50%;border:1px solid rgba(163,204,218,0.3);background:rgba(163,204,218,0.15);font-size:1rem;cursor:pointer;">✕</button>
     </div>
 
     <!-- Hero Section -->
