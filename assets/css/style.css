@@ -2300,3 +2300,46 @@ section {
 
 .mobile-menu-social a:hover {
 }
+
+/* ================================
+   Mobile menu positioning fix
+   ================================ */
+
+.mobile-menu {
+}
+
+[data-theme="dark"] .mobile-menu {
+}
+
+.mobile-menu.open {
+}
+
+.mobile-menu-close {
+}
+
+.mobile-menu-logo {
+}
+
+.mobile-menu-logo span {
+}
+
+.mobile-menu ul {
+}
+
+.mobile-menu ul li {
+}
+
+.mobile-menu ul li:first-child {
+}
+
+.mobile-menu ul li a {
+}
+
+.mobile-menu ul li a:active {
+}
+
+.mobile-menu-social {
+}
+
+.mobile-menu-social a {
+}
